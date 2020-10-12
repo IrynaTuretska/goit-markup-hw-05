@@ -203,6 +203,8 @@ img {
 .hero {
   height: 600px;
   padding-top: 200px;
+  max-width: 1600px;
+  margin: 0 auto;
   text-align: center;
 
   background: var(--hero-background);
@@ -263,11 +265,12 @@ img {
 }
 
 .advantages-svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
-  padding: 25px 100px;
-
   background: var(--team-background);
   border-radius: 4px;
 }
@@ -462,10 +465,11 @@ img {
 .social-list-svg {
   width: 20px;
   height: 20px;
+  fill: var(--svg-color);
 }
 
 .social-list-link:hover .social-list-svg {
-  --color1: var(--team-background);
+  fill: var(--team-background);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -478,6 +482,7 @@ img {
 
 .clients-section {
   display: flex;
+  padding-top: 94px;
 }
 
 .clients-title {
@@ -487,7 +492,7 @@ img {
   line-height: 42px;
   text-align: center;
   margin: 0 auto;
-  margin-top: 96px;
+
   margin-bottom: 50px;
   letter-spacing: 0.03em;
 
@@ -496,15 +501,16 @@ img {
 
 .client-link-item {
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 170px;
   height: 90px;
-  --color1: var(--svg-color);
-  padding-top: 22px;
+  fill: var(--svg-color);
   justify-content: center;
 }
 
 .client-link-item:hover svg {
-  --color1: var(--accent-color);
+  fill: var(--accent-color);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -512,8 +518,6 @@ img {
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
-
-  color: var(--svg-color);
 }
 
 .clients-list-logo:hover,
@@ -668,7 +672,7 @@ img {
 .footer-section .social-list-svg {
   width: 20px;
   height: 20px;
-  --color1: var(--team-background);
+  fill: var(--team-background);
 }
 
 .social-list-link:hover .social-list-svg {
