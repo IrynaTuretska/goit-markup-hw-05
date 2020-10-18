@@ -170,6 +170,8 @@ img {
 .contact-svg {
   margin-right: 10px;
   fill: var(--svg-color);
+
+  transition: fill 250ms var(--timing-function);
 }
 
 .contact-link {
@@ -190,6 +192,8 @@ img {
 
 .nav-list-item .link {
   position: relative;
+
+  transition: color 250ms var(--timing-function);
 }
 
 .current::after {
@@ -474,6 +478,8 @@ img {
   width: 20px;
   height: 20px;
   fill: var(--svg-color);
+
+  transition: fill 250ms var(--timing-function);
 }
 
 .social-list-link:hover .social-list-svg {
@@ -508,13 +514,17 @@ img {
 .client-link-item {
   display: flex;
   align-items: center;
-  justify-content: center;
   width: 170px;
   height: 90px;
-  fill: var(--svg-color);
-  justify-content: center;
 
-  transition: fill 250ms var(--timing-function);
+  justify-content: center;
+  border: 1px solid #afb1b8;
+
+  transition: border-color 250ms var(--timing-function);
+}
+
+.client-link-item svg {
+  fill: var(--svg-color);
 }
 
 .client-link-item:hover svg {
@@ -522,7 +532,6 @@ img {
 }
 
 .clients-list-logo {
-  border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
 }
